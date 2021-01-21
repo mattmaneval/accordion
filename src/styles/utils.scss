@@ -30,5 +30,5 @@
 
 // Animate
 @mixin animate($element: all, $time: 0.2s, $effect: ease-in-out) {
-  @include browser-prefix(transition, $element $time $effect);
+  // @include browser-prefix(transition, $element $time $effect);
 }
