@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: $hover;
+  color: $callout;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: $callout;
+  transition: $transition;
+  padding: 0.5rem;
+
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}

@@ -1,0 +1,25 @@
+.accordian {
+
+  &-step {
+    background-color: $background-alt;
+    padding: $space;
+    margin-bottom: $half-space;
+  } // End &-step
+
+  &-step-head {
+    @include flexible($justify: space-between);
+
+    svg {
+      height: 1.85em;
+      width: 1.85em;
+
+      &, use {
+        fill: black;
+      }
+    }
+  } // End &-step-head
+} // End .accordian
+
+.hidden {
+  display: none;
+}
