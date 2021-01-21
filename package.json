@@ -1,5 +1,5 @@
 {
-  "name": "accordian",
+  "name": "accordion",
   "version": "1.0.0",
   "description": "Made with JavaScript",
   "main": "index.html",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattmaneval/accordian.git"
+    "url": "git+https://github.com/mattmaneval/accordion.git"
   },
   "author": "Matt Maneval",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattmaneval/accordian/issues"
+    "url": "https://github.com/mattmaneval/accordion/issues"
   },
-  "homepage": "https://github.com/mattmaneval/accordian#readme",
+  "homepage": "https://github.com/mattmaneval/accordion#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.32.5"

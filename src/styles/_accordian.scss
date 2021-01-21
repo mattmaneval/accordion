@@ -1,9 +1,10 @@
-.accordian {
+.accordion {
 
   &-step {
     background-color: $background-alt;
     padding: $space;
     margin-bottom: $half-space;
+    border-radius: 0.3em;
   } // End &-step
 
   &-step-head {
