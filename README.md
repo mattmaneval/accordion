@@ -1,4 +1,4 @@
-#JavaScript Accordion
+# JavaScript Accordion
 
 ![Screenshot of JavaScript Accordion](https://user-images.githubusercontent.com/30243679/105418312-eb2dae80-5c0a-11eb-8d8f-16ff9c0ec42f.png)
 
