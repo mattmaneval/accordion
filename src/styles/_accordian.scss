@@ -15,7 +15,7 @@
       width: 1.85em;
 
       &, use {
-        fill: black;
+        fill: $foreground;
       }
     }
   } // End &-step-head

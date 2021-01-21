@@ -1,5 +1,11 @@
-html {
+html,
+body {
   box-sizing: border-box;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    height: -webkit-fill-available;
+  } // End Phone & Below
 }
 
 *,
@@ -19,6 +25,7 @@ h1 {
   display: inline-block;
   font-size: 1em;
   font-weight: 400;
+  color: $callout;
 }
 
 a {

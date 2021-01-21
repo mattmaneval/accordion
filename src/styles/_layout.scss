@@ -14,16 +14,19 @@ body {
 
 header {
   @include wrap;
+  @include flexible($justify: space-between);
   grid-area: 1/1/2/2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    align-items: baseline;
+  } // End Phone & Below
 }
 
 main {
   @include wrap($wrap, 40em);
+  align-self: baseline;
   grid-area: 2/1/3/2;
-  padding: 3rem;
   border-radius: 0.5em;
 }
 
