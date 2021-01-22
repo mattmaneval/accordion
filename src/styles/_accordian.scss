@@ -20,6 +20,15 @@
       }
     }
   } // End &-step-head
+
+  button {
+    background: none;
+    border: none;  
+  }
+
+  &-content {
+    @include animate;
+  }
 } // End .accordian
 
 .hidden {
