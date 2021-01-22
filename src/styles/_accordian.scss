@@ -23,7 +23,8 @@
 
   button {
     background: none;
-    border: none;  
+    border: none;
+    -webkit-appearance: none;
   }
 
   &-content {
