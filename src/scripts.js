@@ -1,16 +1,25 @@
-const accordionButton = document.querySelectorAll('.accordion-step-button');
-const closeButton = document.querySelector('.accordion-step-button-close');
+const accordionButton = document.querySelectorAll('.accordion-panel-button');
+const closeButton = document.querySelector('.accordion-panel-button-close');
 
 const handleClick = (event) => {
+
+  // Finds panel to expand
   const button = event.currentTarget;
-  const content = button.closest('.accordion-step').querySelector('.accordion-step-content');
+  const content = button.closest('.accordion-panel').querySelector('.accordion-panel-content');
 
-  const icon = button.firstElementChild;
-  const iconMinus = button.lastElementChild;
+  // Finds SVGs
+  const expandIcon = button.firstElementChild;
+  const collapseIcon = button.lastElementChild;
 
-  icon.classList.toggle('hidden');
-  iconMinus.classList.toggle('hidden');
-  content.classList.toggle('hidden');
+  // Swaps circle plus icon / circle minus icon
+  expandIcon.classList.toggle('collapsed');
+  collapseIcon.classList.toggle('collapsed');
+
+  // Expands panel by removing 'collapsed' class
+  content.classList.toggle('collapsed');
 }
 
-accordionButton.forEach(button => button.addEventListener('click', handleClick));
+// Add listener to all buttons
+accordionButton.forEach(button =>
+  button.addEventListener('click', handleClick)
+);

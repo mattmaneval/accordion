@@ -1,13 +1,13 @@
 .accordion {
 
-  &-step {
+  &-panel {
     background-color: $background-alt;
     padding: $space;
     margin-bottom: $half-space;
     border-radius: 0.3em;
-  } // End &-step
+  } // End &-panel
 
-  &-step-head {
+  &-panel-head {
     @include flexible($justify: space-between);
 
     svg {
@@ -19,9 +19,14 @@
         fill: $foreground;
       }
     }
-  } // End &-step-head
+  } // End &-panel-head
+
+  &-panel-title {
+    font-size: 1.25em;
+  }
 
   button {
+    padding: $quarter-space;
     background: none;
     border: none;
     -webkit-appearance: none;
@@ -32,6 +37,6 @@
   }
 } // End .accordian
 
-.hidden {
+.collapsed {
   display: none;
 }
